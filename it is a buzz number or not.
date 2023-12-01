@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+bool isBuzzNumber(int num) {
+    if (num % 10 == 7 || num % 7 == 0) {
+        return true;
+    }
+    return false;
+}
+int main() {
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
+    if (isBuzzNumber(number)) {
+        cout << number << " is a buzz number." << endl;
+    } else {
+        cout << number << " is not a buzz number." << endl;
+    }
+    return 0;
+}
