@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+double celsiusToFahrenheit(double celsius) {
+    return (celsius * 9/5) + 32;
+}
+
+int main() {
+    double celsiusTemp = 25.0;
+    double fahrenheitTemp = celsiusToFahrenheit(celsiusTemp);
+    cout << celsiusTemp << " degrees Celsius is equal to " << fahrenheitTemp << " degrees Fahrenheit." <<endl;
+    return 0;
+}
